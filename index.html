@@ -23,15 +23,14 @@
                     method="post" 
                     target="_blank"
                     name="formularioDeRegistroClub" 
-                    accept-charset="UTF-8"
-                    class="form-1" 
+                    accept-charset="UTF-8" 
                     >
                     <fieldset>
                         <legend>Registrarse en el club</legend>
 
-                        <p>Datos personales:</p>
+                        <p class="datosPersonales">Datos personales:</p>
 
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre" class="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
                         autofocus tabindex="1">
 
@@ -43,17 +42,23 @@
                         <input type="number" id="edad" name="edad" placeholder="Indica tu edad"
                         min="0" tabindex="3"> 
                         
-                        <p>Gémero:</p>
+                        <p>Género:</p>
+                        <div class="grid-item">
                         <label for="hombre">Hombre</label>
                         <input type="radio" id="hombre" name="genero" tabindex="4">
                         <label for="mujer">Mujer</label> 
                         <input type="radio" id="mujer" name="genero">
+                        </div>
 
+                        <div class="grid-item">
                         <label for="delCLub">Me siento del club:</label>
                         <input type="checkbox" id="delClub" name="delClub" value="si" tabindex="5">
+                        </div>
 
+                        <div class="grid-item">
                         <label for="algoSobreTi">Escribe algo sobre tí:</label>
                         <textarea name="algoSobreTi" id="algoSobreTi" rows="6" cols="50" tabindex="6"></textarea>
+                        </div>
 
                         <p>Datos de contacto:</p>
 

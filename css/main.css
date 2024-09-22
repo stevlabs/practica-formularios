@@ -1,0 +1,13 @@
+form {
+    width: 500px;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+fieldset > p, .grid-item {
+    grid-column: 1 / 3;
+}
