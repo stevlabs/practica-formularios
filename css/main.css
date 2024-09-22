@@ -1,5 +1,5 @@
 form {
-    width: 500px;
+    width: 50%;
 }
 
 fieldset{
@@ -8,6 +8,6 @@ fieldset{
     gap: 10px;
 }
 
-fieldset > p, .grid-item {
+fieldset > * {
     grid-column: 1 / 3;
 }
