@@ -66,7 +66,106 @@
                 </form>
             </article>
             <article>
-                
+                <header>
+                    <h2>Formulario 2</h2>
+                </header>
+                <form  
+                action="/ruta/del/script" 
+                method="post" 
+                target="_blank"
+                name="formularioDeRoboBicicleta" 
+                accept-charset="UTF-8"
+                >
+                    <fieldset>
+                        <legend>Registrar el robo de la bicicleta</legend>
+
+                        <label for="fecha">Día:</label>
+                        <input type="date" id="fecha" name="fecha">
+
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora">
+
+                        <label for="color">Color de la bicibleta:</label>
+                        <input type="color" id="color" name="color">
+                        
+                        <label for="precio">Rango de precio:</label>
+                        <input type="range" id="precio" name="precio" min="0" max="1000" list="tickmarks">
+                        <datalist id="tickmarks">
+                            <option value="0"></option>
+                            <option value="100"></option>
+                            <option value="200"></option>
+                            <option value="300"></option>
+                            <option value="400"></option>
+                            <option value="500"></option>
+                            <option value="600"></option>
+                            <option value="700"></option>
+                            <option value="800"></option>
+                            <option value="900"></option>
+                            <option value="1000"></option>
+                        </datalist>
+
+                        <label for="tipoBicicleta">Tipo de bicicleta:</label>
+                        <select name="tipoBicicleta" id="tipoBicicleta">
+                            <optgroup label="Urbana">
+                                <option value="Bicicleta_clasica">Bicicleta Clásica</option>
+                                <option value="Bicicleta_plegable">Bicicleta Plegable</option>
+                                <option value="Bicicleta_electrica">Bicicleta Eléctrica</option>
+                                <option value="Bicicleta_commuter">Bicicleta Commuter</option>
+                            </optgroup>
+                            <optgroup label="Montaña">
+                                <option value="Bicicletas_de_tipo_sport">Bicicletas de tipo Sport</option>
+                                <option value="Bicicletas_de_tipo_trail_o_hard_tail">Bicicletas de tipo Trail o Hard Tail</option>
+                                <option value="Bicicletas_para_xc_o_cross_country">Bicicletas para XC o Cross Country</option>
+                            </optgroup>
+                            <optgroup label="Carreras">
+                                <option value="Bicicletas_gran_fondo">Bicicletas Gran Fondo</option>
+                                <option value="Bicicletas_racing">Bicicletas Racing</option>
+                                <option value="Bicicletas_aero">Bicicletas Aero</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="accesorios">Accesorios:</label>
+                        <select name="accesorios" id="accesorios" multiple>
+                            <option value="" selected>Selecciona una opcion</option>
+                            <option value="Ruedines">Ruedines</option>
+                            <option value="Hinchadores">Hinchadores</option>
+                            <option value="Rodillos">Rodillos</option>
+                            <option value="Bomba_de_aire">Bomba de aire</option>
+                            <option value="Alforja">Alforja</option>
+                            <option value="Silla_portabebés">Silla portabebés</option>
+                        </select>
+
+                        <label for="marca">¿Qué marca era?:</label>
+                        <input list="lista-marca" name="marca" id="marca">
+                        <datalist id="lista-marca">
+                            <option value="specialized">
+                            <option value="trek">
+                            <option value="merida">
+                            <option value="scott">
+                            <option value="giant">
+                            <option value="cube">
+                            <option value="lapierre">
+                            <option value="orbea">
+                            <option value="cannondale">
+                            <option value="bmc">
+                            <option value="canyon">
+                            <option value="look">
+                            <option value="protek">
+                            <option value="megamo">
+                            <option value="pinarello">
+                            <option value="bianchi">
+                            <option value="bh">
+                            <option value="factor">
+                            <option value="ghost">
+                            <option value="cervélo">
+                            <option value="argon">
+                        </datalist>
+
+                        <input type="reset" value="Reiniciar">
+                        <input type="submit" value="Enviar">
+
+                    </fieldset>
+                </form>
             </article>
         </section>
     </main>
